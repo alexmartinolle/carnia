@@ -1,0 +1,7 @@
+export { categoryRouter } from './category.router'
+export { productRouter } from './product.router'
+export { customerRouter } from './customer.router'
+export { orderRouter } from './order.router'
+export { saleRouter } from './sale.router'
+export { inventoryRouter } from './inventory.router'
+export { analyticsRouter } from './analytics.router'
