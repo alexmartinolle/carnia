@@ -1,8 +1,14 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
+
+/* ================================
+   DESIGN TOKENS
+================================ */
 
 @layer base {
   :root {
+    /* Blanco explícito (faltaba) */
+    --white: 0 0% 100%;
+
     /* Colores Principales - Carne */
     --primary: 0 85% 45%;
     --primary-foreground: 0 0% 98%;
@@ -39,7 +45,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Border */
+    /* Border & Inputs */
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 85% 45%;
@@ -79,24 +85,28 @@
     --input: 0 0% 14.9%;
     --ring: 0 85% 55%;
   }
-}
 
-@layer base {
+  /* Base global sin @apply conflictivo */
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
-/* Custom Utilities */
+/* ================================
+   UTILIDADES CUSTOM
+================================ */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-  
-  /* Gradiente bandera */
+
+  /* Gradiente bandera horizontal */
   .flag-gradient {
     background: linear-gradient(
       to right,
@@ -105,8 +115,8 @@
       hsl(var(--argentina-blue)) 100%
     );
   }
-  
-  /* Header con bandera */
+
+  /* Header con franjas verticales */
   .header-flag {
     background: linear-gradient(
       180deg,

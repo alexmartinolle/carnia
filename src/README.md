@@ -858,6 +858,184 @@ MIT
 
 ✅ RESUMEN DE FASES - FRONTEND CARNIASMART
 
+src/
+├── app/                              # Next.js App Router
+│   ├── layout.tsx                    # Layout raíz
+│   ├── page.tsx                      # Homepage
+│   ├── globals.css                   # Estilos globales
+│   │
+│   ├── (auth)/                       # Grupo de rutas auth
+│   │   ├── layout.tsx               # Layout auth
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── register/
+│   │       └── page.tsx
+│   │
+│   ├── (dashboard)/                  # Grupo de rutas dashboard
+│   │   ├── layout.tsx               # Layout con sidebar
+│   │   ├── page.tsx                 # Dashboard principal
+│   │   │
+│   │   ├── productos/               # Módulo Productos
+│   │   │   ├── page.tsx            # Lista de productos
+│   │   │   ├── nuevo/
+│   │   │   │   └── page.tsx        # Crear producto
+│   │   │   └── [id]/
+│   │   │       ├── page.tsx        # Ver producto
+│   │   │       └── editar/
+│   │   │           └── page.tsx    # Editar producto
+│   │   │
+│   │   ├── categorias/              # Módulo Categorías
+│   │   │   ├── page.tsx
+│   │   │   ├── nueva/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── editar/
+│   │   │           └── page.tsx
+│   │   │
+│   │   ├── clientes/                # Módulo Clientes
+│   │   │   ├── page.tsx
+│   │   │   ├── nuevo/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       ├── page.tsx
+│   │   │       └── editar/
+│   │   │           └── page.tsx
+│   │   │
+│   │   ├── pedidos/                 # Módulo Pedidos
+│   │   │   ├── page.tsx
+│   │   │   ├── nuevo/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── ventas/                  # Módulo Ventas
+│   │   │   ├── page.tsx
+│   │   │   ├── nueva/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── inventario/              # Módulo Inventario
+│   │   │   ├── page.tsx
+│   │   │   ├── ajustar/
+│   │   │   │   └── page.tsx
+│   │   │   └── historial/
+│   │   │       └── page.tsx
+│   │   │
+│   │   └── analytics/               # Módulo Analytics
+│   │       └── page.tsx
+│   │
+│   └── api/                         # API Routes
+│       └── trpc/
+│           └── [trpc]/
+│               └── route.ts         # tRPC handler
+│
+├── components/                       # Componentes React
+│   ├── ui/                          # shadcn/ui components
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── dialog.tsx
+│   │   ├── table.tsx
+│   │   ├── card.tsx
+│   │   ├── badge.tsx
+│   │   ├── select.tsx
+│   │   ├── form.tsx
+│   │   ├── tabs.tsx
+│   │   ├── toast.tsx
+│   │   └── ... (30+ componentes)
+│   │
+│   ├── layout/                      # Componentes de layout
+│   │   ├── Sidebar.tsx
+│   │   ├── Header.tsx
+│   │   ├── Breadcrumb.tsx
+│   │   └── MobileNav.tsx
+│   │
+│   ├── dashboard/                   # Componentes del dashboard
+│   │   ├── StatsCard.tsx
+│   │   ├── RecentSales.tsx
+│   │   ├── LowStockAlert.tsx
+│   │   ├── PendingOrders.tsx
+│   │   └── RevenueChart.tsx
+│   │
+│   ├── products/                    # Componentes de productos
+│   │   ├── ProductCard.tsx
+│   │   ├── ProductTable.tsx
+│   │   ├── ProductForm.tsx
+│   │   ├── ProductFilters.tsx
+│   │   ├── StockBadge.tsx
+│   │   └── CategorySelect.tsx
+│   │
+│   ├── customers/                   # Componentes de clientes
+│   │   ├── CustomerTable.tsx
+│   │   ├── CustomerForm.tsx
+│   │   ├── CustomerCard.tsx
+│   │   ├── SegmentBadge.tsx
+│   │   └── CustomerSearch.tsx
+│   │
+│   ├── orders/                      # Componentes de pedidos
+│   │   ├── OrderTable.tsx
+│   │   ├── OrderForm.tsx
+│   │   ├── OrderCard.tsx
+│   │   ├── OrderStatusBadge.tsx
+│   │   ├── OrderTimeline.tsx
+│   │   └── ProductSelector.tsx
+│   │
+│   ├── sales/                       # Componentes de ventas
+│   │   ├── SaleForm.tsx
+│   │   ├── SaleTable.tsx
+│   │   ├── QuickSale.tsx
+│   │   ├── PaymentMethodSelect.tsx
+│   │   └── SaleReceipt.tsx
+│   │
+│   ├── inventory/                   # Componentes de inventario
+│   │   ├── StockAdjustForm.tsx
+│   │   ├── MovementTable.tsx
+│   │   ├── StockChart.tsx
+│   │   └── LowStockList.tsx
+│   │
+│   ├── analytics/                   # Componentes de analytics
+│   │   ├── SalesChart.tsx
+│   │   ├── RevenueChart.tsx
+│   │   ├── TopProducts.tsx
+│   │   ├── CategoryBreakdown.tsx
+│   │   └── DateRangePicker.tsx
+│   │
+│   └── shared/                      # Componentes compartidos
+│       ├── DataTable.tsx            # Tabla genérica
+│       ├── EmptyState.tsx
+│       ├── ErrorBoundary.tsx
+│       ├── LoadingSpinner.tsx
+│       ├── ConfirmDialog.tsx
+│       ├── SearchInput.tsx
+│       └── PageHeader.tsx
+│
+├── hooks/                           # Custom React Hooks
+│   ├── use-products.ts
+│   ├── use-categories.ts
+│   ├── use-customers.ts
+│   ├── use-orders.ts
+│   ├── use-sales.ts
+│   ├── use-inventory.ts
+│   ├── use-analytics.ts
+│   ├── use-toast.ts
+│   ├── use-debounce.ts
+│   └── use-media-query.ts
+│
+├── lib/                             # Utilidades
+│   ├── trpc/                       # tRPC client
+│   │   ├── client.ts
+│   │   ├── react.ts
+│   │   └── Provider.tsx
+│   ├── utils.ts                    # Helpers generales
+│   ├── format.ts                   # Formateo (dinero, fechas)
+│   └── constants.ts                # Constantes frontend
+│
+├── styles/                          # Estilos
+│   └── globals.css                 # Tailwind + custom CSS
+│
+└── types/                           # Types adicionales frontend
+    └── index.ts
+
 ✅ FASE 1 COMPLETADA: SETUP INICIAL + LAYOUT BASE
 Archivos creados (7):
 
