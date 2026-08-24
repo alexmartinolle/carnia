@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método de pago - Carnicería El Uru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="index.html" class="logo">
+        <img src="../public/images/logo/logo.png" alt="Carnicería El Uru">
+      </a>
+      <div class="header-actions">
+        <a href="https://maps.app.goo.gl/6pXsYs32e8vSRZBs5" target="_blank" class="store-link">
+          <span>📍</span> Nuestra tienda
+        </a>
+        <div class="lang">
+          <a href="#" class="active">ES</a>
+          <a href="#">CA</a>
+        </div>
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+          <span>🛒</span>
+          <span class="badge">2</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+    <nav class="desktop-nav container">
+      <a href="productos.html">Todos los Productos</a>
+      <a href="productos.html?cat=ternera">Ternera</a>
+      <a href="productos.html?cat=cerdo">Cerdo</a>
+      <a href="productos.html?cat=cordero">Cordero</a>
+      <a href="productos.html?cat=pollo">Pollo</a>
+      <a href="productos.html?cat=elaborados">Elaborados</a>
+      <a href="packs.html">Packs</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="container" style="max-width:720px;">
+      <h1 class="page-title">Método de pago</h1>
+      <p class="page-subtitle">Selecciona cómo quieres pagar tu pedido</p>
+
+      <div class="pay-options">
+        <a href="pedido.html" class="pay-option" style="color:inherit;">
+          <div class="pay-head">
+            <div class="pay-icon orange">🏪</div>
+            <div>
+              <h2 style="margin:0; font-size:1.1rem;">Pagar en tienda</h2>
+              <p style="margin:0; color:var(--text-muted); font-size:0.85rem;">Al recoger el pedido</p>
+            </div>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin:0;">Paga en efectivo o con tarjeta cuando vengas a recoger tu pedido a Carnicería El Uru.</p>
+        </a>
+
+        <a href="pedido.html" class="pay-option" style="color:inherit;">
+          <div class="pay-head">
+            <div class="pay-icon blue">💳</div>
+            <div>
+              <h2 style="margin:0; font-size:1.1rem;">Pagar ahora</h2>
+              <p style="margin:0; color:var(--text-muted); font-size:0.85rem;">Tarjeta online</p>
+            </div>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin:0;">El envío a domicilio requiere pago online con tarjeta. Tu pedido será entregado en la dirección indicada.</p>
+          <p style="color:var(--text-muted); font-size:0.75rem; margin:0.5rem 0 0;">🔒 Pago seguro con Redsys</p>
+        </a>
+      </div>
+
+      <div class="summary" style="margin-top:1.5rem;">
+        <h3 style="margin-top:0;">Resumen del pedido</h3>
+        <ul style="font-size:0.9rem; color:var(--text-main); margin:0 0 1rem; padding:0; list-style:none;">
+          <li style="display:flex; justify-content:space-between; margin:0.5rem 0;">
+            <span>Bife de Chorizo <small style="color:var(--text-muted);">× 1.5kg</small></span>
+            <span>28.35 €</span>
+          </li>
+          <li style="display:flex; justify-content:space-between; margin:0.5rem 0;">
+            <span>Pack Asado <small style="color:var(--text-muted);">× 1ud</small></span>
+            <span>49.90 €</span>
+          </li>
+        </ul>
+        <div style="display:flex; justify-content:space-between; color:var(--text-muted); font-size:0.9rem; margin:0.5rem 0;">
+          <span>Subtotal</span>
+          <span>78.25 €</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; color:var(--text-muted); font-size:0.9rem; margin:0.5rem 0;">
+          <span>Envío</span>
+          <span>5.00 €</span>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <span>83.25 €</span>
+        </div>
+      </div>
+
+      <a href="checkout.html" style="display:block; text-align:center; margin-top:1.5rem; color:var(--text-muted);">← Volver</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Carnicería El Uru</h4>
+        <p>La mejor carne Argentina y Uruguaya de Barcelona</p>
+        <p>🇦🇷 🇺🇾</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Martes a Sábado</p>
+        <p>9:00–14:00 · 17:00–20:30</p>
+        <p>Domingo 9:00–14:00</p>
+        <p>Lunes Cerrado</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona</p>
+        <p>643 99 64 12</p>
+        <p>info@eluru.es</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2025 Carnicería El Uru. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>

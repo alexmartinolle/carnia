@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Carnicería El Uru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="index.html" class="logo">
+        <img src="../public/images/logo/logo.png" alt="Carnicería El Uru">
+      </a>
+      <div class="header-actions">
+        <a href="https://maps.app.goo.gl/6pXsYs32e8vSRZBs5" target="_blank" class="store-link">
+          <span>📍</span> Nuestra tienda
+        </a>
+        <div class="lang">
+          <a href="#" class="active">ES</a>
+          <a href="#">CA</a>
+        </div>
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+          <span>🛒</span>
+          <span class="badge">2</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+    <nav class="desktop-nav container">
+      <a href="productos.html">Todos los Productos</a>
+      <a href="productos.html?cat=ternera">Ternera</a>
+      <a href="productos.html?cat=cerdo">Cerdo</a>
+      <a href="productos.html?cat=cordero">Cordero</a>
+      <a href="productos.html?cat=pollo">Pollo</a>
+      <a href="productos.html?cat=elaborados">Elaborados</a>
+      <a href="packs.html">Packs</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-sm">
+      <img src="../public/images/hero/products.png" alt="Productos">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1>Todos los productos</h1>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="container">
+        <p class="page-subtitle">Los mejores cortes Argentinos y Uruguayos</p>
+
+        <div class="filters">
+          <a href="productos.html" class="filter active">Todos</a>
+          <a href="productos.html?cat=ternera" class="filter">Ternera</a>
+          <a href="productos.html?cat=cerdo" class="filter">Cerdo</a>
+          <a href="productos.html?cat=cordero" class="filter">Cordero</a>
+          <a href="productos.html?cat=pollo" class="filter">Pollo</a>
+          <a href="productos.html?cat=elaborados" class="filter">Elaborados</a>
+        </div>
+
+        <div class="grid grid-lg-4 grid-sm-2">
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Bife+de+Chorizo" alt="Bife de chorizo">
+              <span class="badge badge-offer">Oferta</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bife de Chorizo</h3>
+              <div class="card-price">18.90 €</div>
+              <span class="card-old">21.50 €</span>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Costilla+de+Ternera" alt="Costilla de ternera">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Costilla de Ternera</h3>
+              <div class="card-price">16.50 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Entraña" alt="Entraña">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Entraña</h3>
+              <div class="card-price">22.00 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Asado+de+Tira" alt="Asado de tira">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Asado de Tira</h3>
+              <div class="card-price">19.50 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Vacio" alt="Vacio">
+              <span class="badge badge-offer">Oferta</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Vacio</h3>
+              <div class="card-price">17.90 €</div>
+              <span class="card-old">19.90 €</span>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Matambre" alt="Matambre">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Matambre</h3>
+              <div class="card-price">15.50 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Chorizos+Criollos" alt="Chorizos criollos">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Chorizos Criollos</h3>
+              <div class="card-price">9.90 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Morcilla+Vasca" alt="Morcilla vasca">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Morcilla Vasca</h3>
+              <div class="card-price">8.50 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Carnicería El Uru</h4>
+        <p>La mejor carne Argentina y Uruguaya de Barcelona</p>
+        <p>🇦🇷 🇺🇾</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Martes a Sábado</p>
+        <p>9:00–14:00 · 17:00–20:30</p>
+        <p>Domingo 9:00–14:00</p>
+        <p>Lunes Cerrado</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona</p>
+        <p>643 99 64 12</p>
+        <p>info@eluru.es</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2025 Carnicería El Uru. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>

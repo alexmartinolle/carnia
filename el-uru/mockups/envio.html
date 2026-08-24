@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirección de envío - Carnicería El Uru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="index.html" class="logo">
+        <img src="../public/images/logo/logo.png" alt="Carnicería El Uru">
+      </a>
+      <div class="header-actions">
+        <a href="https://maps.app.goo.gl/6pXsYs32e8vSRZBs5" target="_blank" class="store-link">
+          <span>📍</span> Nuestra tienda
+        </a>
+        <div class="lang">
+          <a href="#" class="active">ES</a>
+          <a href="#">CA</a>
+        </div>
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+          <span>🛒</span>
+          <span class="badge">2</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+    <nav class="desktop-nav container">
+      <a href="productos.html">Todos los Productos</a>
+      <a href="productos.html?cat=ternera">Ternera</a>
+      <a href="productos.html?cat=cerdo">Cerdo</a>
+      <a href="productos.html?cat=cordero">Cordero</a>
+      <a href="productos.html?cat=pollo">Pollo</a>
+      <a href="productos.html?cat=elaborados">Elaborados</a>
+      <a href="packs.html">Packs</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="container" style="max-width:720px;">
+      <h1 class="page-title">Dirección de envío</h1>
+      <p class="page-subtitle">Indica dónde quieres recibir tu pedido</p>
+
+      <div class="form-card">
+        <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem;">
+          <div class="pay-icon blue" style="margin:0;">🚚</div>
+          <div>
+            <h2 style="margin:0; font-size:1.1rem;">Envío a domicilio</h2>
+            <p style="margin:0; color:var(--text-muted); font-size:0.9rem;">Coste de envío: 5,00 €</p>
+          </div>
+        </div>
+
+        <form action="pago.html">
+          <div class="form-row">
+            <label class="form-label" for="address">Dirección *</label>
+            <input id="address" type="text" required class="input" placeholder="Calle, número, piso...">
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="city">Ciudad *</label>
+            <input id="city" type="text" required class="input" placeholder="Ciudad">
+          </div>
+
+          <div class="form-row cols-2">
+            <div>
+              <label class="form-label" for="cp">Código postal *</label>
+              <input id="cp" type="text" required class="input" placeholder="08001">
+            </div>
+            <div>
+              <label class="form-label" for="province">Provincia *</label>
+              <input id="province" type="text" required class="input" placeholder="Barcelona">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Continuar al pago</button>
+        </form>
+      </div>
+
+      <a href="checkout.html" style="display:block; text-align:center; color:var(--text-muted);">← Volver</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Carnicería El Uru</h4>
+        <p>La mejor carne Argentina y Uruguaya de Barcelona</p>
+        <p>🇦🇷 🇺🇾</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Martes a Sábado</p>
+        <p>9:00–14:00 · 17:00–20:30</p>
+        <p>Domingo 9:00–14:00</p>
+        <p>Lunes Cerrado</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona</p>
+        <p>643 99 64 12</p>
+        <p>info@eluru.es</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2025 Carnicería El Uru. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>

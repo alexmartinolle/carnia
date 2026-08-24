@@ -1,0 +1,52 @@
+{
+  "common": {
+    "appName": "Carnisseria El Uru",
+    "loading": "Carregant...",
+    "error": "S'ha produït un error",
+    "save": "Desar",
+    "cancel": "Cancel·lar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Tornar"
+  },
+  "nav": {
+    "home": "Inici",
+    "products": "Productes",
+    "offers": "Ofertes",
+    "contact": "Contacte",
+    "cart": "Cistella",
+    "account": "El meu compte",
+    "logout": "Tancar sessió",
+    "ourStore": "La nostra botiga",
+    "categories": {
+      "ternera": "Vedella",
+      "cerdo": "Porc",
+      "cordero": "Xai",
+      "pollo": "Pollastre",
+      "embutidos": "Embotits",
+      "ofertas": "Ofertes",
+      "envio": "Enviament"
+    }
+  },
+  "auth": {
+    "login": "Iniciar sessió",
+    "logout": "Tancar sessió",
+    "register": "Registrar-se",
+    "email": "Correu electrònic",
+    "password": "Contrasenya",
+    "name": "Nom complet",
+    "phone": "Telèfon",
+    "loginError": "Correu o contrasenya incorrectes"
+  },
+  "admin": {
+    "dashboard": "Tauler",
+    "products": "Productes",
+    "categories": "Categories",
+    "orders": "Comandes",
+    "stock": "Estoc",
+    "sales": "Vendes",
+    "stats": "Estadístiques",
+    "ai": "IA / Previsió",
+    "welcome": "Benvingut al tauler d'administració"
+  }
+}

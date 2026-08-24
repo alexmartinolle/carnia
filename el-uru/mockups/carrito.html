@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu carrito - Carnicería El Uru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="index.html" class="logo">
+        <img src="../public/images/logo/logo.png" alt="Carnicería El Uru">
+      </a>
+      <div class="header-actions">
+        <a href="https://maps.app.goo.gl/6pXsYs32e8vSRZBs5" target="_blank" class="store-link">
+          <span>📍</span> Nuestra tienda
+        </a>
+        <div class="lang">
+          <a href="#" class="active">ES</a>
+          <a href="#">CA</a>
+        </div>
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+          <span>🛒</span>
+          <span class="badge">2</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+    <nav class="desktop-nav container">
+      <a href="productos.html">Todos los Productos</a>
+      <a href="productos.html?cat=ternera">Ternera</a>
+      <a href="productos.html?cat=cerdo">Cerdo</a>
+      <a href="productos.html?cat=cordero">Cordero</a>
+      <a href="productos.html?cat=pollo">Pollo</a>
+      <a href="productos.html?cat=elaborados">Elaborados</a>
+      <a href="packs.html">Packs</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1 class="page-title">Tu carrito</h1>
+
+      <div class="cart-grid">
+        <div>
+          <div class="cart-line">
+            <div class="cart-thumb">
+              <img src="https://placehold.co/200x200/f7f0e8/1a0a00?text=Bife" alt="Bife de chorizo">
+            </div>
+            <div class="cart-info">
+              <div style="display:flex; justify-content:space-between; gap:1rem;">
+                <p class="name">Bife de Chorizo</p>
+                <a href="#" style="color:var(--brand); font-size:0.85rem;">Quitar</a>
+              </div>
+              <p class="meta">18.90 €/kg</p>
+              <div class="cart-actions">
+                <input type="number" step="0.1" min="0.1" value="1.5" class="qty">
+                <span style="color:var(--text-muted); font-size:0.9rem;">kg</span>
+                <span class="cart-total" style="margin-left:auto;">28.35 €</span>
+              </div>
+              <input type="text" value="" placeholder="Notas (ej: en filetes)" style="width:100%; margin-top:0.5rem; padding:0.5rem; border:1px solid #e5e7eb; border-radius:0.5rem; font-size:0.85rem;">
+            </div>
+          </div>
+
+          <div class="cart-line">
+            <div class="cart-thumb">
+              <img src="https://placehold.co/200x200/f7f0e8/1a0a00?text=Pack" alt="Pack Asado">
+            </div>
+            <div class="cart-info">
+              <div style="display:flex; justify-content:space-between; gap:1rem;">
+                <p class="name">Pack Asado</p>
+                <a href="#" style="color:var(--brand); font-size:0.85rem;">Quitar</a>
+              </div>
+              <p class="meta">49.90 €/ud</p>
+              <div class="cart-actions">
+                <input type="number" min="1" step="1" value="1" class="qty">
+                <span style="color:var(--text-muted); font-size:0.9rem;">ud</span>
+                <span class="cart-total" style="margin-left:auto;">49.90 €</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" style="color:var(--text-muted); font-size:0.85rem;">Vaciar carrito</a>
+        </div>
+
+        <aside class="summary">
+          <h3 style="margin-top:0;">Resumen</h3>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span class="font-semibold" style="font-weight:600;">78.25 €</span>
+          </div>
+          <a href="checkout.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Tramitar pedido</a>
+          <a href="productos.html" class="btn btn-outline btn-full" style="margin-top:0.5rem;">Seguir comprando</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Carnicería El Uru</h4>
+        <p>La mejor carne Argentina y Uruguaya de Barcelona</p>
+        <p>🇦🇷 🇺🇾</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Martes a Sábado</p>
+        <p>9:00–14:00 · 17:00–20:30</p>
+        <p>Domingo 9:00–14:00</p>
+        <p>Lunes Cerrado</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona</p>
+        <p>643 99 64 12</p>
+        <p>info@eluru.es</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2025 Carnicería El Uru. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>

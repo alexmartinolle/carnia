@@ -1,0 +1,52 @@
+{
+  "common": {
+    "appName": "Carnicería El Uru",
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver"
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "offers": "Ofertas",
+    "contact": "Contacto",
+    "cart": "Carrito",
+    "account": "Mi cuenta",
+    "logout": "Cerrar sesión",
+    "ourStore": "Nuestra Tienda",
+    "categories": {
+      "ternera": "Ternera",
+      "cerdo": "Cerdo",
+      "cordero": "Cordero",
+      "pollo": "Pollo",
+      "embutidos": "Embutidos",
+      "ofertas": "Ofertas",
+      "envio": "Envío"
+    }
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "register": "Registrarse",
+    "email": "Email",
+    "password": "Contraseña",
+    "name": "Nombre completo",
+    "phone": "Teléfono",
+    "loginError": "Email o contraseña incorrectos"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "products": "Productos",
+    "categories": "Categorías",
+    "orders": "Pedidos",
+    "stock": "Stock",
+    "sales": "Ventas",
+    "stats": "Estadísticas",
+    "ai": "IA / Previsión",
+    "welcome": "Bienvenido al panel de administración"
+  }
+}

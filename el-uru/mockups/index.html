@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Carnicería El Uru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="index.html" class="logo">
+        <img src="../public/images/logo/logo.png" alt="Carnicería El Uru">
+      </a>
+      <div class="header-actions">
+        <a href="https://maps.app.goo.gl/6pXsYs32e8vSRZBs5" target="_blank" class="store-link">
+          <span>📍</span> Nuestra tienda
+        </a>
+        <div class="lang">
+          <a href="#" class="active">ES</a>
+          <a href="#">CA</a>
+        </div>
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+          <span>🛒</span>
+          <span class="badge">2</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menú">☰</button>
+      </div>
+    </div>
+    <nav class="desktop-nav container">
+      <a href="productos.html">Todos los Productos</a>
+      <a href="productos.html?cat=ternera">Ternera</a>
+      <a href="productos.html?cat=cerdo">Cerdo</a>
+      <a href="productos.html?cat=cordero">Cordero</a>
+      <a href="productos.html?cat=pollo">Pollo</a>
+      <a href="productos.html?cat=elaborados">Elaborados</a>
+      <a href="packs.html">Packs</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="../public/images/slider/slide-1.png" alt="Carnicería El Uru" class="hero-slide active">
+      <img src="../public/images/slider/slide-2.png" alt="Carnicería El Uru" class="hero-slide">
+      <img src="../public/images/slider/slide-3.png" alt="Carnicería El Uru" class="hero-slide">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1>Carnicería El Uru</h1>
+        <p>La tradición del asado llega a Barcelona. Cortes frescos, calidad argentina y uruguaya.</p>
+        <a href="productos.html" class="btn btn-primary mt-4">Ver productos</a>
+      </div>
+    </section>
+
+    <div class="info-bar">
+      <div class="container">
+        <span>🥩 Carne fresca todos los días</span>
+        <span>🚚 Envío a domicilio disponible</span>
+        <span>🏪 Recogida en tienda</span>
+      </div>
+    </div>
+
+    <section class="page">
+      <div class="container">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h2 class="page-title">Productos destacados</h2>
+            <p class="page-subtitle">Selección del día</p>
+          </div>
+          <a href="productos.html" style="color:var(--brand);">Ver todos →</a>
+        </div>
+        <div class="grid grid-lg-4 grid-sm-2">
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Bife+de+Chorizo" alt="Bife de chorizo">
+              <span class="badge badge-offer">Oferta</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bife de Chorizo</h3>
+              <div class="card-price">18.90 €</div>
+              <span class="card-old">21.50 €</span>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Costilla+de+Ternera" alt="Costilla de ternera">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Costilla de Ternera</h3>
+              <div class="card-price">16.50 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Entraña" alt="Entraña">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Entraña</h3>
+              <div class="card-price">22.00 €</div>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+          <a href="producto-detalle.html" class="card">
+            <div class="card-img">
+              <img src="https://placehold.co/400x400/f7f0e8/1a0a00?text=Chorizos+Criollos" alt="Chorizos criollos">
+              <span class="badge badge-offer">Oferta</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Chorizos Criollos</h3>
+              <div class="card-price">9.90 €</div>
+              <span class="card-old">11.90 €</span>
+              <button class="add-cart" type="button" aria-label="Añadir al carrito" onclick="event.preventDefault(); event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page bg-warm">
+      <div class="container">
+        <h2 class="page-title text-center">Calidad que se nota</h2>
+        <p class="text-center section-lead" style="margin:0 auto 2rem;">Seleccionamos las mejores piezas de Argentina y Uruguay para que disfrutes en casa.</p>
+        <div class="grid grid-lg-3">
+          <div class="value text-center">
+            <h3>🥩 Frescura diaria</h3>
+            <p>Recibimos y cortamos carne todos los días.</p>
+          </div>
+          <div class="value text-center">
+            <h3>🌎 Origen garantizado</h3>
+            <p>Angus y Hereford criados en pasturas naturales.</p>
+          </div>
+          <div class="value text-center">
+            <h3>👨‍🍳 Asesoramiento</h3>
+            <p>Te ayudamos a elegir el corte ideal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="container">
+        <h2 class="page-title">Encuéntranos</h2>
+        <p class="section-lead">Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona.</p>
+        <img src="https://placehold.co/1200x300/f7f0e8/1a0a00?text=Mapa+de+ubicación" alt="Mapa de ubicación" style="border-radius:1rem; width:100%;">
+      </div>
+    </section>
+
+    <section class="page bg-warm">
+      <div class="container">
+        <h2 class="page-title text-center">Síguenos</h2>
+        <p class="text-center section-lead" style="margin:0 auto 2rem;">@carniceriaeluru</p>
+        <div class="grid grid-sm-2 grid-lg-4">
+          <img src="../public/images/logo/instagram.png" alt="Instagram" style="border-radius:0.75rem;">
+          <img src="https://placehold.co/300x300/5BC0EB/FFFFFF?text=Cortes" alt="Cortes" style="border-radius:0.75rem;">
+          <img src="https://placehold.co/300x300/FCBF49/1a0a00?text=Elaborados" alt="Elaborados" style="border-radius:0.75rem;">
+          <img src="https://placehold.co/300x300/f7f0e8/1a0a00?text=Tienda" alt="Tienda" style="border-radius:0.75rem;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Carnicería El Uru</h4>
+        <p>La mejor carne Argentina y Uruguaya de Barcelona</p>
+        <p>🇦🇷 🇺🇾</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Martes a Sábado</p>
+        <p>9:00–14:00 · 17:00–20:30</p>
+        <p>Domingo 9:00–14:00</p>
+        <p>Lunes Cerrado</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Gran Via de Lluís Companys, 102, 08330 Premià de Mar, Barcelona</p>
+        <p>643 99 64 12</p>
+        <p>info@eluru.es</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">© 2025 Carnicería El Uru. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      let i = 0;
+      setInterval(() => {
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('active');
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
